@@ -10,13 +10,16 @@ class DashboardView extends StatefulWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: const EDashboardAppBar(),
-      body: Column(
+      body: ListView(
         children: [
           EDashboardHeader(pageController: controller.pageController),
           const SizedBox(height: 15),
-          const CategoriesHeader(),
+          const Header(headerTitle: 'Categories'),
           const SizedBox(height: 4),
-          const CategoriesGrid()
+          const CategoriesGrid(),
+          const SizedBox(height: 4),
+          const Header(headerTitle: 'Discounts'),
+          const ProductGrid()
         ],
       ),
     );

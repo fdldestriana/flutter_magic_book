@@ -2,27 +2,27 @@ import 'package:edashboard2/core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CategoriesHeader extends StatelessWidget {
-  const CategoriesHeader({
-    super.key,
-  });
-
+class Header extends StatelessWidget {
+  const Header({super.key, required this.headerTitle});
+  final String headerTitle;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 61,
-      width: 360,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            'Categories',
-            style: GoogleFonts.roboto(
-                color: '#455154'.toColor(),
-                fontSize: 24,
-                fontWeight: FontWeight.w700),
-          ),
-          TextButton(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+      child: SizedBox(
+        height: 61,
+        width: 360,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              headerTitle,
+              style: GoogleFonts.roboto(
+                  color: '#455154'.toColor(),
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700),
+            ),
+            TextButton(
               onPressed: () {},
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,8 +54,10 @@ class CategoriesHeader extends StatelessWidget {
                     size: 12,
                   )
                 ],
-              ))
-        ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

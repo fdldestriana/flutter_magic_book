@@ -8,5 +8,6 @@ export 'package:edashboard2/module/dashboard/controller/dashboard_controller.dar
 export 'package:edashboard2/module/dashboard/view/dashboard_view.dart';
 export 'package:edashboard2/module/dashboard/widget/edashboard_appbar.dart';
 export 'package:edashboard2/module/dashboard/widget/edashboard_header.dart';
-export 'package:edashboard2/module/dashboard/widget/categories_header.dart';
+export 'package:edashboard2/module/dashboard/widget/header.dart';
 export 'package:edashboard2/module/dashboard/widget/categories_grid.dart';
+export 'package:edashboard2/module/dashboard/widget/product_grid.dart';
