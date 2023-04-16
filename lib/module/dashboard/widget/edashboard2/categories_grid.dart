@@ -22,6 +22,7 @@ class CategoriesGrid extends StatelessWidget {
                   borderRadius: BorderRadius.circular(6)),
             ),
             child: ListTile(
+              contentPadding: EdgeInsets.zero,
               title: Text(
                 categories[index],
                 style: GoogleFonts.roboto(

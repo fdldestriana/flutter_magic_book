@@ -22,37 +22,40 @@ class ProductGrid extends StatelessWidget {
             mainAxisSpacing: 10,
             crossAxisCount: 2),
         itemBuilder: (context, index) => SizedBox(
-          height: 204,
+          height: 206,
           child: Column(
             children: [
-              Stack(children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(6),
-                  child: Image.network(
-                    'https://picsum.photos/id/$index/165/135',
-                    width: 165,
-                    height: 135,
-                    fit: BoxFit.cover,
+              Flexible(
+                flex: 1,
+                child: Stack(children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(6),
+                    child: Image.network(
+                      'https://picsum.photos/id/$index/165/135',
+                      width: 165,
+                      height: 135,
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                ),
-                Positioned(
-                  top: 10,
-                  right: 10,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.white),
-                    width: 32,
-                    height: 32,
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.more_horiz,
-                          size: 25,
-                        )),
-                  ),
-                )
-              ]),
+                  Positioned(
+                    top: 10,
+                    right: 10,
+                    child: Container(
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle, color: Colors.white),
+                      width: 32,
+                      height: 32,
+                      child: IconButton(
+                          padding: EdgeInsets.zero,
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.more_horiz,
+                            size: 25,
+                          )),
+                    ),
+                  )
+                ]),
+              ),
               Text(
                 'Suede Chukka Boots',
                 style: GoogleFonts.roboto(
