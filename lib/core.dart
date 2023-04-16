@@ -4,10 +4,5 @@ If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
 export 'package:edashboard2/utils/color_lib.dart';
-export 'package:edashboard2/module/dashboard/controller/dashboard_controller.dart';
-export 'package:edashboard2/module/dashboard/view/dashboard_view.dart';
-export 'package:edashboard2/module/dashboard/widget/edashboard_appbar.dart';
-export 'package:edashboard2/module/dashboard/widget/edashboard_header.dart';
-export 'package:edashboard2/module/dashboard/widget/header.dart';
-export 'package:edashboard2/module/dashboard/widget/categories_grid.dart';
-export 'package:edashboard2/module/dashboard/widget/product_grid.dart';
+export 'package:edashboard2/module/dashboard/controller/edashboard2/dashboard_controller.dart';
+export 'package:edashboard2/module/dashboard/view/edashboard2/dashboard_view.dart';

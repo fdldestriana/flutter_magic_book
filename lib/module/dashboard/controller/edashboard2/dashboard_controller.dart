@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:edashboard2/state_util.dart';
-import '../view/dashboard_view.dart';
+import '../../view/edashboard2/dashboard_view.dart';
 
-class DashboardController extends State<DashboardView>
+class Dashboard2Controller extends State<Dashboard2View>
     implements MvcController {
-  static late DashboardController instance;
-  late DashboardView view;
+  static late Dashboard2Controller instance;
+  late Dashboard2View view;
   final PageController pageController = PageController(
     initialPage: 2,
     viewportFraction: 0.8,

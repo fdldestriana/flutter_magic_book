@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:edashboard2/core.dart';
 
-class DashboardView extends StatefulWidget {
-  const DashboardView({super.key});
+import '../../widget/edashboard2/categories_grid.dart';
+import '../../widget/edashboard2/edashboard_appbar.dart';
+import '../../widget/edashboard2/edashboard_header.dart';
+import '../../widget/edashboard2/header.dart';
+import '../../widget/edashboard2/product_grid.dart';
 
-  Widget build(context, DashboardController controller) {
+class Dashboard2View extends StatefulWidget {
+  const Dashboard2View({super.key});
+
+  Widget build(context, Dashboard2Controller controller) {
     controller.view = this;
 
     return Scaffold(
@@ -26,5 +32,5 @@ class DashboardView extends StatefulWidget {
   }
 
   @override
-  State<DashboardView> createState() => DashboardController();
+  State<Dashboard2View> createState() => Dashboard2Controller();
 }

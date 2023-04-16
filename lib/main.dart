@@ -1,5 +1,7 @@
+import 'package:edashboard2/state_util.dart';
 import 'package:flutter/material.dart';
-import 'core.dart';
+
+import 'module/dashboard/view/edashboard1/dashboard_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      navigatorKey: Get.navigatorKey,
       home: const DashboardView(),
     );
   }
