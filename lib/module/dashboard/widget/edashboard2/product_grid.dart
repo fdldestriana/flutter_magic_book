@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProductGrid extends StatelessWidget {
-  const ProductGrid({
-    super.key,
-  });
+  const ProductGrid({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +53,9 @@ class ProductGrid extends StatelessWidget {
                     ),
                   )
                 ]),
+              ),
+              const SizedBox(
+                height: 11,
               ),
               Text(
                 'Suede Chukka Boots',

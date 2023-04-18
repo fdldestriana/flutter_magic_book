@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class EDashboardAppBar extends StatelessWidget implements PreferredSize {
-  const EDashboardAppBar({
-    super.key,
-  });
+  const EDashboardAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
